@@ -4,8 +4,8 @@
     "shell-version": [
         "45"
     ],
-    "url": "https://github.com/esenliyim/sp-tray",
-    "uuid": "sp-tray@sp-tray.esenliyim.github.com",
+    "url": "https://github.com/Nikita-Sazhnev/sp-tray",
+    "uuid": "sp-tray@sp-tray.Nikita-Sazhnev.github.com",
     "version": 24,
     "settings-schema": "org.gnome.shell.extensions.sp-tray",
     "gettext-domain": "sp-tray"

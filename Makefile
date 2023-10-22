@@ -1,4 +1,3 @@
-
 PKG_NAME = sp-tray
 UUID = sp-tray@sp-tray.esenliyim.github.com
 BASE_MODULES = metadata.json LICENSE.txt
