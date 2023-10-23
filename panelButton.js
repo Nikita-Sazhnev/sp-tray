@@ -44,7 +44,7 @@ const SpTrayButton = GObject.registerClass(
     { GTypeName: "SpTrayButton" },
     class SpTrayButton extends PanelMenu.Button {
         _init() {
-            this.extensionObject = Extension.lookupByUUID("sp-tray@sp-tray.esenliyim.github.com");
+            this.extensionObject = Extension.lookupByUUID("sp-tray@sp-tray.Nikita-Sazhnev.github.com");
             super._init(null, this.extensionObject.metadata.name);
 
             this.ui = new Map();
@@ -413,6 +413,10 @@ const SpTrayButton = GObject.registerClass(
 
         // many thanks to mheine's implementation
         showSpotify() {
+            if(!this.dbus.spotifyIsActive()) {
+                GLib.spawn_command_line_async("spotify")
+                return;
+            }
             if (this._spotiWin && this._spotiWin.has_focus()) {
                 if(!this.dbus.spotifyIsActive()) {
                     GLib.spawn_command_line_async("spotify")
