@@ -142,6 +142,9 @@ along with this program.If not, see < http://www.gnu.org/licenses/>. -->
             <default>"🔁"</default>
             <summary>the icon that shows playback is in playlist loop mode</summary>
         </key>
-
+        <key type="s" name="clilent-launch">
+            <default>"spotify"</default>
+            <summary>the command to open your spotify client</summary>
+        </key>
     </schema>
 </schemalist>

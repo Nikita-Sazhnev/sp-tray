@@ -766,7 +766,36 @@
                         <property name="orientation">horizontal</property>
                     </object>
                 </child>
-
+                <child>
+                    <object class="GtkBox">
+                        <property name="spacing">12</property>
+                        <property name="margin-start">12</property>
+                        <child>
+                            <object class="GtkLabel">
+                                <property name="label" translatable="yes">Launch client command</property>
+                                <property name="hexpand">true</property>
+                                <property name="halign">1</property>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkEntry" id="clilentLaunch">
+                                <property name="max_length">100</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">True</property>
+                                <property name="show_emoji_icon">True</property>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkButton" id="reseClilentLaunch">
+                                <property name="label">↺</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">True</property>
+                                <property name="receives_default">True</property>
+                                <signal name="clicked" handler="on_resetClilentLaunch_clicked" swapped="no" />
+                            </object>
+                        </child>
+                    </object>
+                </child>
                 <!-- position control -->
 
                 <child>

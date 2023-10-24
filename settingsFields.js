@@ -176,6 +176,14 @@ const settingsFields = [
         resetCallback: "on_resetMarqueeInterval_clicked",
         restartsAnimation: false,
     },
+    {
+        setting: "clilent-launch",
+        fieldId: "clilentLaunch",
+        type: "text",
+        resettable: true,
+        resetCallback: "on_resetClilentLaunch_clicked",
+        restartsAnimation: false,
+    },
 ];
 
 export default settingsFields;

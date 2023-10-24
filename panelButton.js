@@ -414,14 +414,10 @@ const SpTrayButton = GObject.registerClass(
         // many thanks to mheine's implementation
         showSpotify() {
             if(!this.dbus.spotifyIsActive()) {
-                GLib.spawn_command_line_async("spotify")
+                GLib.spawn_command_line_async(this.settings.get_string("clilent-launch"))
                 return;
             }
             if (this._spotiWin && this._spotiWin.has_focus()) {
-                if(!this.dbus.spotifyIsActive()) {
-                    GLib.spawn_command_line_async("spotify")
-                    return;
-                }
                 // spotify is up and focused
                 if (this._notSpotify) {
                     // hide spotify and pull up the last active window if possible
