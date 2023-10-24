@@ -1,5 +1,5 @@
 PKG_NAME = sp-tray
-UUID = sp-tray@sp-tray.esenliyim.github.com
+UUID = sp-tray@sp-tray.Nikita-Sazhnev.github.com
 BASE_MODULES = metadata.json LICENSE.txt
 SRC_MODULES = constants.js dbus.js extension.js panelButton.js
 PREFS_MODULES = prefs.js settingsFields.js
